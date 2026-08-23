@@ -43,27 +43,27 @@ const add = (a, b) => a + b;
 
 console.log(add(10, 20));
 
-// // Normal function:
+// Normal function:
 
-// // "this depends on how I am called."
+// "this depends on how I am called."
 
-// // Arrow function:
+// Arrow function:
 
-// // "this depends on where I was created.
+// "this depends on where I was created.
 
 // => **** You only need a normal function if you specifically want the arrow function to inherit a useful this from that normal function. ***
 
-// const person = {
-//     name: "Khyathi",
+const person = {
+    name: "Khyathi",
 
-//     greet: function() {
+    greet: function() {
 
-//         const arrow = () => {
-//             console.log(this.name);
-//         };
+        const arrow = () => {
+            console.log(this.name);
+        };
 
-//         arrow();
-//     }
-// };
+        arrow();
+    }
+};
 
-// person.greet();
+person.greet();
