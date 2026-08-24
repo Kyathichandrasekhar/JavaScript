@@ -26,5 +26,7 @@ chai()
     console.log(`${myname} is a good boy`);
 })("Khyathi");
 
-
+(function(myname){
+    console.log(`${myname} is a Great King `);
+})("Khyathi");
 // proper def : IIFE (Immediately Invoked Function Expression) is a JavaScript function expression that is defined and executed immediately after it is created.
