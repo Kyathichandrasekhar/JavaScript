@@ -27,6 +27,23 @@
     }
     OpimizewayLanguage("C++")
     OpimizewayLanguage("JavaScript")
+
+    //Edit 
+    // slecting elements to edit 
+    const secondlang = document.querySelector("li:nth-child(2)")
+    // secondlang.innerHTML = "React" //it is not that optimized for the large projects
+
+    //optimized approach to edit 
+    const newli = document.createElement('li')
+    newli.textContent = "Express"
+    secondlang.replaceWith(newli)
+
+    //Edit outerHTML
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    //remove
+    const Lastlang = document.querySelector('li:last-child')
+    Lastlang.remove()
 </script>
 </html>
-
